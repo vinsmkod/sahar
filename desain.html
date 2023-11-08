@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style1.css">
+</head>
+<body>
+    <style>
+        html{
+            background:url('night');
+            -webkit-background-size:cover;
+            -moz-background-size:cover;
+            -o-background-size:cover;
+            background-size:cover;
+        }
+       </style>
+    </body>
+   <div class="hero">
+    <nav>
+        <ul>
+            <li><a href="">Latest</a></li>
+            <li><a href="">Modern</a></li>
+            <li><a href="">Contemporary</a></li>
+            <li><a href="">Affordable</a></li>
+        </ul>
+        <button type="button" onclick="toggleBtn()" id="btn"><span></span></button>
+    </nav>
+    <div class="lamp-container">
+        <img src="desain/lamp.png" class="lamp">
+        <img src="desain/light.png" class="light" id="light">
+    </div>
+    <div class="text-container">
+        <h1>Sahar Lamp Company</h1>
+        <p>Lampu ini adalah model yang pertama kali dibuat oleh perusahaan kami. Lampu
+            ini termasuk dalam kategori lampu modern,dengan desain yang sangat
+            keren. Mampu Menerangi di kegelapan malam hari.</p>
+        <a href="">Check All Products</a>
+        <div class="control">
+            <p>04</p>
+            <div class="line"><span></span></div>
+                <p>05</p>
+            </div>
+        </div>
+    </div>
+   </div> 
+   <script>
+    var btn = document.getElementById("btn");
+    var light = document.getElementById("light");
+    function toggleBtn(){
+        btn.classList.toggle("active")
+        light.classList.toggle("on")
+    }
+   </script>
+</body>
+</html>
